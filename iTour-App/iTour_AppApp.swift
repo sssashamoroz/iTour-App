@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData 
 
 @main
 struct iTour_AppApp: App {
@@ -13,5 +14,7 @@ struct iTour_AppApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: DestinationModel.self) // Swift Data (Step 3. Add Context to view group)
+
     }
 }
